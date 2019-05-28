@@ -1,10 +1,18 @@
 // A partir do exercício 4, adicione um input e um botão, na qual seja possível inserir um valor, ao clicar no botão, o value do input deverá ser adicionado à lista e inserido na ul.
 
-let lista = document.querySelector("ul");
-let input = document.querySelector ("input").value;
-let item = document.createElement ("li")
+let input = document.querySelector ("input");
+let listaUl = document.querySelector("ul");
 let btn = document.querySelector("button");
+let array = []
 
 btn.addEventListener ('click', function(){
-    lista.innerHTML(input.value);
+    let listaItem = document.createElement ('li'); 
+    let valor = document.createTextNode (input.value);
+    listaUl.appendChild (listaItem);
+    listaItem.appendChild (valor);
+    limparInput();
 })
+
+function limparInput (){
+    input.value = ""
+}
