@@ -52,12 +52,26 @@ var usuarios = [
   }
 ];
 
- console.log (`A ${usuarios[0].nome} possui as habilidades: ${usuarios[0].habilidades}\nA ${usuarios[1].nome} possui as habilidades: ${usuarios[1].habilidades}`);
+function exibirHabilidades (usuarios) {
+  for (elemento of usuarios) {
+    console.log (`A ${elemento.nome} possui as habilidades: ${elemento.habilidades.join(" - ")}`);
+  }
+}
+
+
+    console.log (`A ${usuarios[0].nome} possui as habilidades: ${usuarios[0].habilidades}\nA ${usuarios[1].nome} possui as habilidades: ${usuarios[1].habilidades}`);
 ```
 
 Escreva uma função que produza o seguinte resultado:
 
-```
+```js
+// COM O \N:
 A Bruna possui as habilidades: Javascript, ReactJS, Redux
 A Gabriela possui as habilidades: VueJS, Ruby on Rails, Elixir
+
+
+//  COM O JOIN:
+
+A Bruna possui as habilidades: Javascript -  ReactJS -  Redux
+VM7171:3 A Gabriela possui as habilidades: VueJS -  Ruby on Rails -  Elixir
 ```

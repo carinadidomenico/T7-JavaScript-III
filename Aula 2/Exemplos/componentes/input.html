@@ -7,20 +7,27 @@
 
 <body>
     <div></div>
+    <button onclick=""></button>
 </body>
 
 <script>
     
 
-    const listComponent = () => {
-            return (
-                `
-                <input type="text" value="">                
-                `
-            )
-        }
+   // const listComponent = (type = "password") => {
+    //         return (
+    //             `
+    //             <input type="${type}" value="">                
+    //             `
+    //         )
+    //     }
 
-    document.body.innerHTML = listComponent();
+    // document.body.innerHTML = listComponent("password");
+
+    const createButton = () => {
+        return (`<button >Adicionar</button>`);
+    }    
+
+    document.div.innerHTML = createButton();
     
 </script>
 
