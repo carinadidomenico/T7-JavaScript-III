@@ -3,14 +3,17 @@
 let input = document.querySelector ("input");
 let listaUl = document.querySelector("ul");
 let btn = document.querySelector("button");
-let array = []
 
 btn.addEventListener ('click', function(){
-    let listaItem = document.createElement ('li'); 
-    let valor = document.createTextNode (input.value);
-    listaUl.appendChild (listaItem);
-    listaItem.appendChild (valor);
-    limparInput();
+
+    if(input.value != 0 ){
+        let listaItem = document.createElement ('li'); 
+        let valor = document.createTextNode (input.value);
+        listaUl.appendChild (listaItem);
+        listaItem.appendChild (valor);
+        limparInput();
+    }
+
 })
 
 function limparInput (){
