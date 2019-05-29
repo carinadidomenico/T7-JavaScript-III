@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício</title>
+</head>
+<body>
+    <input type="text">
+    <button type="submit">Filtro</button>
+</body>
+<script>
+
+    let nomes = ["banana", "morango", "melancia", "tomate", "laranja", "bacuri", "manga", "melão", "mamão", "sapoti", "pera", "limão", "tamarindo", "acerola", "tangerina"]
+
+    let botao = document.querySelector ('button');
+
+    botao.addEventListener('click', function(){
+
+        let valueInput = document.querySelector ('input').value;
+
+        let returnFilter = frutas.frutas.filter((fru) => {
+            return fru == valueInput
+        });
+
+    })
+
+</script>
+</html>
