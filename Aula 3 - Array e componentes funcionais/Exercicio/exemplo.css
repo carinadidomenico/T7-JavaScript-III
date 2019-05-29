@@ -1,3 +1,7 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -16,7 +20,7 @@
 }
 
 .input__search {
-    width: 40%;
+    width: 70%;
     height: 40px;
     border-radius: 10px;
     padding: 5px;
@@ -34,11 +38,11 @@
 }
 
 .group__input {
-    width: 70%;
-    float: right;;
-    right: 10px;
-} 
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
 
 .card {
     width: 200px;
@@ -58,14 +62,16 @@
     font-size: 15px;
 }
 
-.cards {
-    width: 100%;
+.cards {    
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 @media (min-width: 992px) {
     .navbar {
         padding: 0 10%;
     }
+    
 }
