@@ -3,9 +3,9 @@
 // Crie um array de alunas contendo as informações: nome, idade, materia_preferida, conforme exemplo abaixo:
 
 const alunas = [
-    { nome: "XXX", idade: 23, materia_preferida: "JavaScript" },
-    { nome: "ZZZ", idade: 15, materia_preferida: "JQuery" },
-    { nome: "AAA", idade: 30, materia_preferida: "Bootstrap" }
+    { nome: "Mari", idade: 23, materia_preferida: "JavaScript" },
+    { nome: "Joana", idade: 15, materia_preferida: "JQuery" },
+    { nome: "Lucrecia", idade: 30, materia_preferida: "Bootstrap" }
   ];
 
 
@@ -33,6 +33,13 @@ const alunas = [
   {  nome: "AAA", idade: 30, materia_preferida: "Bootstrap" }
 ]
 
+function idadeMaior () {
+  if (alunas.idade >= 24) {
+    return
+  }  
+}
+
+let idadeMaior = alunas.filter (idadeMaior());
 
 //  1.3 Utilizando o `find`
 
