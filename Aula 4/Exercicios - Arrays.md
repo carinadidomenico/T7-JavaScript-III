@@ -6,9 +6,9 @@ Crie um array de alunas contendo as informações: nome, idade, materia_preferid
 
 ```js
 const alunas = [
-    { nome: "XXX", idade: 23, materia_preferida: "JavaScript" },
-    { nome: "ZZZ", idade: 15, materia_preferida: "JQuery" },
-    { nome: "AAA", idade: 30, materia_preferida: "Bootstrap" }
+    { nome: "Mari", idade: 23, materia_preferida: "JavaScript" },
+    { nome: "Lucrecia", idade: 15, materia_preferida: "JQuery" },
+    { nome: "Joana", idade: 30, materia_preferida: "Bootstrap" }
   ];
 
 ```
@@ -47,8 +47,3 @@ Retorne um array que encontre as alunas na qual a matéria preferida seja JavaSc
   { nome: "XXX", idade: 23, materia_preferida: "JavaScript" }
 ]
 ```
-
-
-
-
-
