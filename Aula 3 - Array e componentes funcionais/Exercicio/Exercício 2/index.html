@@ -12,7 +12,7 @@
 </body>
 <script>
 
-    let nomes = ["banana", "morango", "melancia", "tomate", "laranja", "bacuri", "manga", "melão", "mamão", "sapoti", "pera", "limão", "tamarindo", "acerola", "tangerina"]
+    let frutas = ["banana", "morango", "melancia", "tomate", "laranja", "bacuri", "manga", "melão", "mamão", "sapoti", "pera", "limão", "tamarindo", "acerola", "tangerina"]
 
     let botao = document.querySelector ('button');
 
@@ -20,8 +20,8 @@
 
         let valueInput = document.querySelector ('input').value;
 
-        let returnFilter = frutas.frutas.filter((fru) => {
-            return fru == valueInput
+        let returnFilter = frutas.filter((fru) => {
+            return fru == valueInput;
         });
 
     })
