@@ -58,7 +58,7 @@ const mostrarCarta = (cartasTarot) => {
         <h4>Simbolismo:</h4>
         <p>${carta.simbolismo}</p>
     </div>`)
-    })
+    }).join(" ")
 }
 
 document.querySelector ("#container").innerHTML += mostrarCarta(cartasTarot);

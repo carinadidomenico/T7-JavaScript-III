@@ -1,10 +1,21 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-};
+}
+
+
+#container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
 
 .cartas {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-};
+    width: 30%;
+    margin: 0 auto;
+}
+
+img {
+    width: 150px;
+}
+
