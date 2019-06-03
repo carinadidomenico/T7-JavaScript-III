@@ -8,11 +8,11 @@ body {
     display: flex;
     justify-content: space-between;
     flex-flow: wrap;
+    margin: auto;
 }
 
 .cartas {
     width: 30%;
-    margin: 0 auto;
 }
 
 img {
